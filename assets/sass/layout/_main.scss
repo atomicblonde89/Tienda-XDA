@@ -1,0 +1,199 @@
+.main__img{
+    width: 55%;
+    position: relative;
+    float: right;
+   height: 968px;
+   z-index: 0;
+    img{
+        width: 100%;
+        height: 90%;
+        
+    }
+    @include laptop-view{
+        width: 55%;
+        img{
+            width: 100%;
+            height: 90%;
+            
+        }
+    }
+    @include tablet-view{
+        width: 100%;
+        top: -150px;
+    }
+    @include mobile-view{
+        width: 100%;
+        height: auto;
+        top: 0;
+    }
+}
+.article {
+    width: 45%;
+    position: relative;
+    height: 620px;
+    padding-top: 10px;
+    left: 45px;
+    z-index: 3;
+    
+    h1{
+        font-size: $xxx-large;
+        margin-left: 80px;
+    }
+    p{
+        position: absolute;
+        font-size: 20px;
+        color: $granitegray;
+        width: 350px;
+        margin-left: 80px;
+        letter-spacing: 1px;
+        word-spacing: 1px;
+        top: 230px;
+    }
+    @include laptop-view{
+        width: 45%;
+        left: -30px;
+        
+        h1{
+           width: 80%;
+            
+        }
+        p{
+            top: 260px;
+
+        }
+    }
+    @include tablet-view{
+        width: 100%;
+        top: -520px;
+        left: 0;
+        background: $white;
+        h1{ position: absolute;
+            left: 70px;
+        }
+        p{
+            position: absolute;
+            width: 60%;
+            left: 70px;
+        }
+    }
+    @include mobile-view{
+        position: absolute;
+        width: 100%;
+        top: 600px;
+        left: 0;
+        background: $white;
+        h1{
+            position:absolute;
+            left: 1%;
+        }
+        p{
+            position: absolute;
+            width: 70%;
+            top: 200px;
+            left: 1%;
+        }
+    }
+    @include mobile-xs-view{
+        top: 435px;
+        background: $white;
+        h1{
+            font-size: 40px;
+        }
+        p{
+            top: 130px;
+        }
+    }
+}
+.section-suscribe__title {
+    width: 45%;
+    position: relative;
+    background: $smokyblack;
+    height: 348px;
+    z-index: 4;
+    h3{
+        position: absolute;
+        color: $white;
+        font-size: 35px;
+        top: 40px;
+        left: 125px;
+        
+    }
+    h5{
+        position: absolute;
+        color: $white;
+        font-size: 19px;
+        left: 125px;
+        bottom: 125px;
+        font-weight: lighter;
+        }
+    input{
+        position: absolute;
+        width: 300px;
+        height: 45px;
+        left: 125px;
+        bottom: 110px;
+        background: $white;
+        color: $smokyblack;
+    }
+    &__bar {
+        position: absolute;
+        width: 70px;
+        height: 348px;
+        right: 0%;
+        background:$white;
+    }
+    h4{
+       font-size: 30px;
+       -webkit-transform: rotate(90deg); 
+       position: absolute;
+       display:inline-flex;
+       place-items: center;
+       bottom: 80px;
+       left: -26px;
+    }
+    @include laptop-view{
+        h3{
+            left: 50px;
+        }
+        h5{
+            left: 50px;
+        }
+        input{
+            width: 280px;
+            left: 50px;
+        }
+    }
+    @include tablet-view{
+        position: absolute;
+        width: 100%;
+        bottom: -800px;
+    }
+    @include mobile-view{
+        width: 100%;
+        h3{
+            left: 90px;
+        }
+        h5{
+            left: 90px;
+        }
+        input {
+            left: 90px;
+        }
+    }
+    @include mobile-xs-view{
+        width: 100%;
+        bottom: -650px;
+        h3{
+            
+            left: 25px;
+        }
+        h5{
+            left: 25px; 
+        }
+        input{
+            left: 25px;
+        }
+    }
+}
+
+ 

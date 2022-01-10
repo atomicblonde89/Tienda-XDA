@@ -1,16 +1,16 @@
 .nav-icon {
     display: none;
     @include mobile-view{
-        position: absolute;
-        display: block;
+    position: absolute;
+    display: block;
     right: 2%;
     font-size: $xxx-large;
     }
     }
 .navbar {
-    height: 150px;
+    height: 120px;
     display: flex;
-    background: #fff;
+    background: $white;
     align-items: center;
     position: relative;
     z-index: 5;
@@ -27,7 +27,8 @@
             position: absolute;
             text-decoration: none;
             color: $white;
-            font-size: 25px;
+            font-size: $xx-large;
+            
         }
     }
     &__links{
