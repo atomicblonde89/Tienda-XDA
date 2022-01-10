@@ -1,0 +1,23 @@
+// Mobile Screen //:
+@mixin mobile-xs-view {
+    @media (max-width:#{$max-mobile-xs}){
+        @content;
+    }   
+}
+@mixin mobile-view {
+    @media (max-width:#{$max-mobile}){
+        @content;
+    }   
+}
+// Tablet Screen //:
+@mixin tablet-view {
+    @media (max-width:#{$max-tablet}){
+        @content;
+    }   
+}
+//Desktop Screen//:
+@mixin laptop-view {
+    @media (max-width:#{$min-laptop}){
+        @content;
+    }   
+}
