@@ -1,25 +1,27 @@
-.main__img{
+.main{
     width: 55%;
     position: relative;
     float: right;
-   height: 968px;
-   z-index: 0;
-    img{
+    height: 944px;
+    z-index: 0;
+    &__img{
         width: 100%;
-        height: 90%;
+        height: 100%;
         
     }
     @include laptop-view{
         width: 55%;
-        img{
-            width: 100%;
-            height: 90%;
+        &__img{
+            width: 90%;
+            height: 80%;
             
         }
     }
     @include tablet-view{
         width: 100%;
         top: -150px;
+        right: 10px;
+        
     }
     @include mobile-view{
         width: 100%;
@@ -41,13 +43,14 @@
     }
     p{
         position: absolute;
-        font-size: 20px;
+        font-size: $x-large;
         color: $granitegray;
         width: 350px;
         margin-left: 80px;
-        letter-spacing: 1px;
+        letter-spacing: 1.5 px;
         word-spacing: 1px;
-        top: 230px;
+        top: 200px;
+        font-family: $raleway;
     }
     @include laptop-view{
         width: 45%;
@@ -64,16 +67,21 @@
     }
     @include tablet-view{
         width: 100%;
-        top: -520px;
-        left: 0;
+        top: -620px;
         background: $white;
-        h1{ position: absolute;
-            left: 70px;
-        }
+        
+        h1 { 
+        position: absolute;
+        left: 60px;
+        top: 20px;
+        
+       }
+
         p{
             position: absolute;
-            width: 60%;
-            left: 70px;
+            width: 80%;
+            left: 50px;
+            top: 200px;
         }
     }
     @include mobile-view{
@@ -104,12 +112,13 @@
         }
     }
 }
-.section-suscribe__title {
+.form__section {
     width: 45%;
     position: relative;
     background: $smokyblack;
-    height: 348px;
+    height: 300px;
     z-index: 4;
+
     h3{
         position: absolute;
         color: $white;
@@ -126,6 +135,7 @@
         bottom: 125px;
         font-weight: lighter;
         }
+
     input{
         position: absolute;
         width: 300px;
@@ -135,14 +145,7 @@
         background: $white;
         color: $smokyblack;
     }
-    &__bar {
-        position: absolute;
-        width: 70px;
-        height: 348px;
-        right: 0%;
-        background:$white;
-    }
-    h4{
+    h6{
        font-size: 30px;
        -webkit-transform: rotate(90deg); 
        position: absolute;
@@ -151,6 +154,7 @@
        bottom: 80px;
        left: -26px;
     }
+
     @include laptop-view{
         h3{
             left: 50px;
@@ -170,14 +174,19 @@
     }
     @include mobile-view{
         width: 100%;
+        height: 230px;
+
         h3{
             left: 90px;
+            top: -20px;
         }
         h5{
             left: 90px;
+            top: 20px;
         }
         input {
             left: 90px;
+            top: 100px;
         }
     }
     @include mobile-xs-view{
@@ -196,4 +205,12 @@
     }
 }
 
- 
+.form__suscribe {
+    position: absolute;
+    width: 60px;
+    height: 388px;
+    top: -40px;
+    right: 0%;
+    border: none;
+    background:$white;
+}
